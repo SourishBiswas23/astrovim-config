@@ -71,3 +71,6 @@ autocmd("BufReadPost", {
     end
   end,
 })
+
+-- dismiss notifications
+vim.api.nvim_set_keymap("", "<leader>dn", ':lua require("notify").dismiss()<CR>', { noremap = true, silent = true })
